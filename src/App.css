@@ -1,33 +1,57 @@
-.App {
-  text-align: center;
+.form {
+    max-width: 1000px;
+    margin: 15px auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.input-text {
+    height: 40px;
+    width: 1000px;
+    padding: 0 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.experts {
+    max-width: 1000px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.experts li {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin-bottom: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.experts li img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.experts li div {
+    display: flex;
+    flex-direction: column;
+}
+
+.experts .skills {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+}
+
+.experts .skills li {
+    border-radius: 9px;
+    color: white;
+    background-color: cadetblue;
+    padding: 5px;
+    margin-right: 7px;
+}
+
+.experts .skills li.predicate {
+    background-color: darkgoldenrod;
+}
+
+.no-results {
+    max-width: 1000px;
+    margin: 0 auto;
 }
